@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["fusion-cli", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.39.1"],\
             ["fusion-core", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.11.0"],\
+            ["fusion-plugin-react-helmet-async", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.6.6"],\
             ["fusion-react", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:4.8.7"],\
             ["fusion-tokens", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:3.0.2"],\
             ["react", "npm:18.2.0"],\
@@ -6924,6 +6925,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fusion-plugin-react-helmet-async", [\
+        ["npm:2.6.6", {\
+          "packageLocation": "./.yarn/cache/fusion-plugin-react-helmet-async-npm-2.6.6-982d824d3c-4ed1e21e93.zip/node_modules/fusion-plugin-react-helmet-async/",\
+          "packageDependencies": [\
+            ["fusion-plugin-react-helmet-async", "npm:2.6.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.6.6", {\
+          "packageLocation": "./.yarn/__virtual__/fusion-plugin-react-helmet-async-virtual-136d4a92eb/0/cache/fusion-plugin-react-helmet-async-npm-2.6.6-982d824d3c-4ed1e21e93.zip/node_modules/fusion-plugin-react-helmet-async/",\
+          "packageDependencies": [\
+            ["fusion-plugin-react-helmet-async", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.6.6"],\
+            ["@types/fusion-core", null],\
+            ["fusion-core", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.11.0"],\
+            ["react-helmet-async", "virtual:136d4a92eb6d02c8c662d7cd4301c0daf46983227e896f30aae026eca035c97d2928f7b0743ca0e1ec60dc839bd6dcddfb652de8f46a7a0a5a0464b27f8fcd9c#npm:1.3.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/fusion-core",\
+            "fusion-core"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["fusion-react", [\
         ["npm:4.8.7", {\
           "packageLocation": "./.yarn/cache/fusion-react-npm-4.8.7-266cc12672-0254b1f718.zip/node_modules/fusion-react/",\
@@ -7644,6 +7668,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["get-intrinsic", "npm:1.2.0"],\
             ["has", "npm:1.0.3"],\
             ["side-channel", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["invariant", [\
+        ["npm:2.2.4", {\
+          "packageLocation": "./.yarn/cache/invariant-npm-2.2.4-717fbdb119-cc3182d793.zip/node_modules/invariant/",\
+          "packageDependencies": [\
+            ["invariant", "npm:2.2.4"],\
+            ["loose-envify", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10395,6 +10429,46 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-fast-compare", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/react-fast-compare-npm-3.2.0-fbfa6627d9-8ef272c825.zip/node_modules/react-fast-compare/",\
+          "packageDependencies": [\
+            ["react-fast-compare", "npm:3.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-helmet-async", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/react-helmet-async-npm-1.3.0-240f565ac8-7ca7e47f8a.zip/node_modules/react-helmet-async/",\
+          "packageDependencies": [\
+            ["react-helmet-async", "npm:1.3.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:136d4a92eb6d02c8c662d7cd4301c0daf46983227e896f30aae026eca035c97d2928f7b0743ca0e1ec60dc839bd6dcddfb652de8f46a7a0a5a0464b27f8fcd9c#npm:1.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-helmet-async-virtual-631a2e35a1/0/cache/react-helmet-async-npm-1.3.0-240f565ac8-7ca7e47f8a.zip/node_modules/react-helmet-async/",\
+          "packageDependencies": [\
+            ["react-helmet-async", "virtual:136d4a92eb6d02c8c662d7cd4301c0daf46983227e896f30aae026eca035c97d2928f7b0743ca0e1ec60dc839bd6dcddfb652de8f46a7a0a5a0464b27f8fcd9c#npm:1.3.0"],\
+            ["@babel/runtime", "npm:7.21.0"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["invariant", "npm:2.2.4"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", null],\
+            ["react-dom", null],\
+            ["react-fast-compare", "npm:3.2.0"],\
+            ["shallowequal", "npm:1.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-is", [\
         ["npm:16.13.1", {\
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
@@ -10989,6 +11063,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["shallowequal", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/shallowequal-npm-1.1.0-6688d419cb-f4c1de0837.zip/node_modules/shallowequal/",\
+          "packageDependencies": [\
+            ["shallowequal", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["shebang-command", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/shebang-command-npm-2.0.0-eb2b01921d-6b52fe8727.zip/node_modules/shebang-command/",\
@@ -11572,6 +11655,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["test_fusion", "workspace:."],\
             ["fusion-cli", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.39.1"],\
             ["fusion-core", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.11.0"],\
+            ["fusion-plugin-react-helmet-async", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:2.6.6"],\
             ["fusion-react", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:4.8.7"],\
             ["fusion-tokens", "virtual:948588370fb2158ac11a7ca6e919887670f28cad5ea0cdf9f3f89bfb28d4fd045a026c83e99b8057eb7e0dd3bf02f41f1f6646b9e9389d8fb0eaa11b048a2394#npm:3.0.2"],\
             ["react", "npm:18.2.0"],\

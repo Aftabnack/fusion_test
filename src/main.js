@@ -1,8 +1,10 @@
 import App from "fusion-react";
-import React from "react";
+import HelmetPlugin from "fusion-plugin-react-helmet-async";
+
+import Root from "./todo";
 
 export default async function start() {
-  const root = <div>Hello World</div>;
-  const app = new App(root);
+  const app = new App(Root);
+  app.register(HelmetPlugin);
   return app;
 }
