@@ -9,27 +9,14 @@ const outputKeys = {
   client: "client",
   clientLegacy: "client-legacy",
 };
-const serverFolder = path.join(
-  process.cwd(),
-  ".fusion/dist/development/server"
-);
-const clientFolder = path.join(
-  process.cwd(),
-  ".fusion/dist/development/client"
-);
+const serverFolder = path.join(process.cwd(), ".fusion/dist/production/server");
+const clientFolder = path.join(process.cwd(), ".fusion/dist/production/client");
 
 const outputData = {
   [outputKeys.client]: {},
   [outputKeys.clientLegacy]: {},
   [outputKeys.server]: {},
 };
-
-async function getCompressedSize(code) {
-  return (
-    (await compress(typeof code === "string" ? code : Buffer.from(code)))
-      .length / 1024
-  );
-}
 
 async function measureSizes(files, parentFolder, type) {
   for (let file of files) {
@@ -38,12 +25,12 @@ async function measureSizes(files, parentFolder, type) {
       continue;
     }
     const filePath = path.join(parentFolder, file);
-    const data = fs.readFileSync(filePath, "utf8");
-    const gzipSize = await getCompressedSize(data);
+    const stats = fs.statSync(filePath);
+    const sizeInKbs = stats.size / 1024;
     if (outputData[type][extension] == null) {
       outputData[type][extension] = 0;
     }
-    outputData[type][extension] += gzipSize;
+    outputData[type][extension] += sizeInKbs;
   }
 }
 
