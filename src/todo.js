@@ -10,6 +10,13 @@ const Root = () => {
     if (e.key === "Enter") {
       setInputText("");
       setTodos([...todos, inputText]);
+      fetch("/api/todos", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ value: inputText }),
+      });
     }
   };
 
