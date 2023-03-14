@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "fusion-plugin-react-helmet-async";
+import fetch from "isomorphic-fetch";
 
 const Root = () => {
   const [todos, setTodos] = useState([]);
@@ -15,6 +16,12 @@ const Root = () => {
   const handleOnChange = (e) => {
     setInputText(e.currentTarget.value);
   };
+
+  useEffect(() => {
+    fetch("/api/todos")
+      .then(async (res) => await res.json())
+      .then((res) => setTodos(res));
+  }, []);
 
   return (
     <React.Fragment>
